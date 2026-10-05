@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-forest: #12352B;
+  --color-darkgreen: #0B241D;
+  --color-warmcream: #F5F1E8;
+  --color-softcream: #FAF8F3;
+  --color-gold: #B99A5A;
+  --color-gold-hover: #A58748;
+  --color-sage: #A8B9A5;
+  --color-charcoal: #1E2421;
+  --color-muted: #68716C;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-softcream);
+    color: var(--color-charcoal);
+  }
+
+  /* Cormorant Garamond italic serif styling for display headings */
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+}
+
+/* Custom scrollbar and subtle hairline styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(18, 53, 43, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(18, 53, 43, 0.3);
+}
+
+/* Subtle smooth curve decorative lines */
+.contour-pattern {
+  background-image: radial-gradient(rgba(18, 53, 43, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

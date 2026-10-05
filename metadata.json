@@ -1,0 +1,6 @@
+{
+  "name": "Wealthia",
+  "description": "Modern personal wealth and financial management platform. Build wealth with intention.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
